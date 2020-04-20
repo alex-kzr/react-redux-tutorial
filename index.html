@@ -19,7 +19,10 @@
             }
 
             handleClick = (e) => {
-                console.log(this.state); // dont work if not arrow function - have to bind 'this' - https://www.freecodecamp.org/news/this-is-why-we-need-to-bind-event-handlers-in-class-components-in-react-f7ea1a6f93eb/
+                this.setState({
+                   name: 'Yoshi',
+                   age: 25
+                });
             }
 
             handleMouseOver(e) {
